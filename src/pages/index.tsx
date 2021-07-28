@@ -27,8 +27,7 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ templates }: Templates) {
-  console.log('não mais vazio', templates.length, templates)
-
+  console.log('os templates', templates)
   return (
     <>
       <Sidebar />

@@ -1,4 +1,5 @@
 import { NewSheetContainerProps } from 'interfaces/interfaces'
+import { TemplatesListContainer } from './styles'
 
 const TemplatesList = ({
   templates,
@@ -10,12 +11,17 @@ const TemplatesList = ({
   }
 
   return (
-    <ul>
-      {templates.map((template) => (
-        <li key={template.id}>{template.title}</li>
-      ))}
+    <TemplatesListContainer>
+      <ul>
+        {templates.map((template) => {
+          const title = template.title
+          const formatedTitle = title.charAt(0).toUpperCase() + title.slice(1)
+
+          return <li key={template.id}>{formatedTitle}</li>
+        })}
+      </ul>
       <button onClick={isCreatingNewSheet}>Criar Novo Template</button>
-    </ul>
+    </TemplatesListContainer>
   )
 }
 

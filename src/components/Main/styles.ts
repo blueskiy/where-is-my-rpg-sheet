@@ -17,7 +17,6 @@ export const MainContent = styled.div`
     display: inline-block;
     padding: 12px 20px;
     border-radius: 5px;
-    /* transition: 65ms all ease-in-out; */
   }
   button:hover {
     background-color: #474c50;
@@ -26,14 +25,14 @@ export const MainContent = styled.div`
 export const customStyles = {
   overlay: {
     zIndex: 3,
-    backgroundColor: 'rgba(0, 0, 0, 0.295)'
+    backgroundColor: 'rgba(0, 0, 0, 0.7)'
   },
   content: {
     background: 'rgb(47, 52, 55)',
     border: 'none',
     height: '90vh',
     width: '55vw',
-    top: '47%',
+    top: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
