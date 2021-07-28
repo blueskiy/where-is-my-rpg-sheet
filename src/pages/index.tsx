@@ -3,6 +3,7 @@ import client from '../services/apollo-client'
 
 import Main from 'components/Main'
 import Sidebar from 'components/Sidebar'
+import { Templates } from 'interfaces/interfaces'
 
 export async function getServerSideProps() {
   const { data } = await client.query({
@@ -25,7 +26,7 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Home({ templates }) {
+export default function Home({ templates }: Templates) {
   console.log('não mais vazio', templates.length, templates)
 
   return (

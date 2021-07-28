@@ -1,4 +1,10 @@
-const TemplatesList = ({ templates, createNewSheet, setCreateNewSheet }) => {
+import { NewSheetContainerProps } from 'interfaces/interfaces'
+
+const TemplatesList = ({
+  templates,
+  createNewSheet,
+  setCreateNewSheet
+}: NewSheetContainerProps) => {
   const isCreatingNewSheet = () => {
     setCreateNewSheet(!createNewSheet)
   }

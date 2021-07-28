@@ -23,3 +23,22 @@ export const MainContent = styled.div`
     background-color: #474c50;
   }
 `
+export const customStyles = {
+  overlay: {
+    zIndex: 3,
+    backgroundColor: 'rgba(0, 0, 0, 0.295)'
+  },
+  content: {
+    background: 'rgb(47, 52, 55)',
+    border: 'none',
+    height: '90vh',
+    width: '55vw',
+    top: '47%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    maxWidth: '93vw',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+}
